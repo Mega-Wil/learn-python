@@ -7,7 +7,7 @@ try:
     weight = Decimal(input("Enter shipping weight: "))
     if weight <= 0:
         raise ValueError("Please enter a positive weight.")
-except (InvalidOperation, ValueError) as e:
+except ValueError as e:
     print("There was an error:", e)
     exit()
 
